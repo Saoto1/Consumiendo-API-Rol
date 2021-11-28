@@ -19,6 +19,7 @@ formularioLogin.addEventListener('submit', (e)=>{//capturamos el evento
     const usuario = document.querySelector('#login').value; //Creacmos una constante el cual obtendra el valor de la caja de texto Usuario
     const password = document.querySelector('#password').value; //Creacmos una constante el cual obtendra el valor de la caja de texto Password
     
+    console.log(usuario,password);
     auth(usuario,password)//mandamos a llamar al metodo
 })
 
