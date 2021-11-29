@@ -1,44 +1,19 @@
-//codigo para modal formulario crear
-const openCrear = document.getElementById('modal-crear');
-const closeCrear = document.getElementById('cerrarModalCrear');
-const modal_container = document.getElementById('modal_container');
 
-// closeCrear.addEventListener('click', ()=>{
-//     modal_container.classList.remove('show')
-// });
 
-//codigo para modal formulario eliminar
-const modal_container_eliminar = document.getElementById('modal_container_eliminar');
-
+//asignacion de Id para eliminar
 function openEliminar(id){
-  // modal_container_eliminar.classList.add('show')
-console.log(id);
   this.idRol = id;
-  console.log(this.idRol);
-}
-
-function closeEliminar(){
-  modal_container_eliminar.classList.remove('show')
 }
 // --------------------------------------------------------------------------
-
-// codigo para modal formulario Modificar
-const modal_container_modificar = document.getElementById('modal_container_modificar');
-
+//asignacion de id para modificar
 function openModificar(id) {
-  // modal_container_modificar.classList.add('show')
-
   this.idRol = id;
-}
-
-function closeModificar(){
-  modal_container_modificar.classList.remove('show')
 }
 
 //-----------------------------------------------------------------------------------------------------------------
+//Codigo para el Formulario de crear
 const ulRoles = document.querySelector(".ul-roles");
 const formularioCrear = document.querySelector("#formulario-crear");
-
 token = "" + localStorage.getItem("token");
 url = localStorage.getItem("urlApi");
 
@@ -57,11 +32,9 @@ function GetIndex(){
         .then(data => {
             this.roles = data;
             let html = "";
-
+//For Each para generar modales
             this.roles.forEach(item => {
-                const li = `
-            
-
+                const li = `            
         <div class="col-md-4 mb-4 d-flex justify-content-center align-items-center"> 
   <div class="card" style="width: 18rem;">
     <div class="card-body">

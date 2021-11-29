@@ -22,32 +22,23 @@
         <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">          
             <li class="nav-item">
+              <!-- Boton para cerrar Sesion -->
               <button type="button" class="btn btn-primary btn-sm" id="cerrarSesion-button">Cerrar Sesion</button>
             </li>
           </ul>
           <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Escribe para buscar" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
+            <!-- Boton para crear Rol -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-crear">
+              Crear Rol
+            </button>
           </form>
         </div>
       </div>
     </nav>
 <!-- Fin del Navbar -->
 
-  <!-- modal crear -->
 
-  <!-- <section class="section-modal">
-    <br>
-    <div444 class="d-grid gap-2 d-md-block">
-      <button class="btn btn-primary" type="button" id="modal-crear">Crear nuevo Rol</button>     
-    </div444> -->
-
-<!-- Button trigger para desplegar modal modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-crear">
-  Crear Rol
-</button>
-
-<!-- Modal -->
+<!-- Modal para crear rol -->
 
 <form action="" id="formulario-crear">
 <div class="modal fade" id="modal-crear" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -76,7 +67,7 @@
 
 <!-- fin modal crear -->
 
-<!-- modal Modificar -->
+<!-- modal para Modificar -->
 
  <form action="" id="formulario-modificar">
   <div class="modal fade" id="modal-modificar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -103,26 +94,9 @@
   </div>
   </form> 
 
-
- <!-- <div class="modal-container-modificar" id="modal_container_modificar">
-    <div class="modal-modificar">
-        <h1>Modificar Rol</h1>
-        <br>
-        <form action="" class="formulario-modal" id="formulario-modificar">
-            <div class="flex-input">
-                <label for="">Nombre</label>
-                <input type="text" name="" id="modificar-nombre">
-            </div>
-            <div class="modal-flex-input">
-                <button type="submit">Modificar</button>
-            </div>   
-        </form>
-        <button id="cerrarModalModificar" onclick="closeModificar()">Cancelar</button>
-    </div>
-</div>  -->
 <!-- fin modal modificar -->
 
-<!-- Modal Eliminar-->
+<!-- Modal para eliminar Eliminar-->
 
  <form action="" id="formulario-eliminar">
   <div class="modal fade" id="modal-eliminar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -146,15 +120,6 @@
   </div>
   </form>
 
- <!-- <div class="modal-container-eliminar" id="modal_container_eliminar">
-    <div class="modal-eliminar">
-        <h1>Eliminar Rol</h1>
-        <p>Estas seguro de eliminar este Rol?</p>
-        <br>
-        <button onclick="EliminarRol()">Eliminar</button>
-        <button id="cerrarModalEliminar" onclick="closeEliminar()">Cancelar</button>
-    </div>
-</div>  -->
 <!-- fin modal Eliminar -->
 </section>
 
